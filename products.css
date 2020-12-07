@@ -1,0 +1,93 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: verdana;
+	box-sizing: border-box;
+}
+
+nav{
+	width: 100%;
+	height: 80px;
+	background-color: #FFFFFF;
+	line-height: 80px; 
+}
+nav ul{
+	float: right;
+	margin-right: 30px;
+
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block; 
+	transition: 0.8s all;
+}
+nav ul li:hover{
+	background-color: #ff523b;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #0E0808;
+	padding: 30px;
+}
+#container {
+  margin: auto;
+  width: 1190px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+.btn{
+	display: inline-block;
+	background: #ff523b;
+	color: #fff;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	position: absolute;
+	text-decoration: none;
+ 	top: 75%;
+ 	left: 65%;
+ 	transition: background 0.5s;
+}
+.btn:hover{
+	background: #563434;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  background-color: #663a44
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  background-color: #663a44
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+  	-ms-flex: 100%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+  	-ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
